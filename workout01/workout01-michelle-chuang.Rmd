@@ -1,0 +1,11 @@
+---
+title: "Workout 1"
+author: "Michelle Chuang"
+date: "3/11/2019"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
