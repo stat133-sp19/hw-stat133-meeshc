@@ -77,3 +77,7 @@ pdf(file = '../images/gsw-shot-charts.pdf', width = 8, height = 7)
 combined_shot_chart
 dev.off()
 
+png(filename = "../images/gsw-shot-charts.png", width = 8, height = 7, units = "in", res = 300)
+combined_shot_chart
+dev.off()
+
