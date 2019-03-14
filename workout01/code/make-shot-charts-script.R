@@ -64,3 +64,16 @@ dev.off()
 pdf(file = '../images/stephen-curry-shot-chart.pdf', width = 6.5, height = 5)
 stephen_shot_chart
 dev.off()
+
+combined <- read_csv('../data/shots-data.csv')
+combined_shot_chart <- ggplot(data=combined) + annotation_custom(court_image, -250, 250, -50, 420) +
+  geom_point(aes(x = x, y = y, color = shot_made_flag)) + 
+  ylim(-50, 420) +
+  ggtitle('Shot Chart: GSW (2016 season)') +
+  theme_minimal() +
+  facet_wrap(~name)
+
+pdf(file = '../images/gsw-shot-charts.pdf', width = 8, height = 7)
+combined_shot_chart
+dev.off()
+
