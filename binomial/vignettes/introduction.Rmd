@@ -1,0 +1,60 @@
+---
+title: "Getting Started with binomial"
+author: "Michelle Chuang"
+date: "5/3/2019"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+library(binomial)
+```
+
+## Creating a binomial distribution object
+A binomial distribution object in this package is of the class `bindis`. To create an object of this class, use `bin_probability()` and pass in the number of trials as well as the probability of success as parameters. This will create a binomial distribution object that displays a data frame of the probability of success ranging from 0 to the number of trials. You can then use the `plot` function to display a bar graph of the distributions.
+```{r}
+bd <- bin_distribution(trials = 5, prob = 0.5)
+bd
+plot(bd)
+```
+
+## Creating a binomial cumulative distribution object
+Similar to creating a binomial distribution object, you can also create a binomial cumulative distribution object, of class `bincum`. You can do this with the function `bin_cumulative()` and pass in the parameters for trials and probability. This essentially is similar to the binomial distribution object, but with an added column that displays the cumulative probability. Again, you can use the `plot` function, but this time, it displays a line graph which graphs the cumulative probabilities as successes increase.
+```{r}
+bc <- bin_cumulative(trials = 5, prob = 0.5)
+plot(bc)
+```
+
+### Creating a binomial random variable object
+To create a binomial variable object, you can invoke `bin_variable()` which will create an object of class `binvar`, which is the binomial random variable object. This object will have two named elements: `trials` for the number of trials and `prob` which the probability of success. Both these elements are passed in by the user as parameters when using the function.
+```{r}
+bin1 <- bin_variable(trials = 10, prob = 0.3)
+```
+You can then view the parameters of the binomial random variable object with the `print` function in the package.
+```{r}
+bin1
+```
+Additionally, to display a more comprehensive summary, you can use the `summary` function. This function creates an object of class `summary.binvar` which contains additional summary measures such as mode and variance.
+```{r}
+binsum1 <- summary(bin1)
+binsum1
+```
+
+### Summary measures
+To access the various summary measures without using `summary` on a binomial variable object, you can make a couple of function calls by passing in `trials` and `prob` as the parameters.
+- `bin_mean`
+- `bin_variance`
+- `bin_mode`
+- `bin_skewness`
+- `bin_kurtosis`
+```{r}
+bin_mean(10, 0.3)
+bin_variance(10, 0.3)
+bin_mode(10, 0.3)
+bin_skewness(10, 0.3)
+bin_kurtosis(10, 0.3)
+```

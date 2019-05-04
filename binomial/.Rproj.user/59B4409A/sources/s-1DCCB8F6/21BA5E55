@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556918001484.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "21BA5E55",
+    "lastKnownWriteTime" : 1556912452,
+    "last_content_update" : 1556912452,
+    "path" : "~/stat133/hw-stat133/workout3_functions.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "251,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

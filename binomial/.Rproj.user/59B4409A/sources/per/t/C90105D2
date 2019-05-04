@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556917978945.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1545232419",
+    "id" : "C90105D2",
+    "lastKnownWriteTime" : 1556918015,
+    "last_content_update" : 1556918015995,
+    "path" : "~/binomial/R/hello.R",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "251,0",
+        "scrollLine" : "144"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
