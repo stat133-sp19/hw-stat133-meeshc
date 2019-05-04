@@ -9,7 +9,7 @@ check_prob <- function(prob) {
 
 # auxiliary function to check if input trials is a valid number of trials
 check_trials <- function(trials) {
-  if (length(trials) == 1 && trials > 0 && trials%%1 == 0) {
+  if (length(trials) == 1 && trials >= 0 && trials%%1 == 0) {
     return(TRUE)
   } else {
     stop("invalid trials value")
