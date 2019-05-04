@@ -29,3 +29,4 @@ bin_mode(10, 0.3)
 bin_skewness(10, 0.3)
 bin_kurtosis(10, 0.3)
 ```
+
