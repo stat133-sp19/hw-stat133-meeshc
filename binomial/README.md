@@ -1,5 +1,4 @@
 ## Overview
---------
 `"binomial"` provides functionalities for visualizing and accessing summary measures of a binomial variable.
 - `bin_variable` creates a binomial random variable object (of class`"binvar"`)
 - `bin_distribution` creates a binomial distribution object (of class `"bindis"`)
@@ -9,8 +8,7 @@
 - `bin_mean`, `bin_variance`, `bin_mode`, `bin_skewness`, and `bin_kurtosis` are all summary measure functions that can be used with `trials` and `prob` parameters
 
 ## Usage
---------
-```
+```{r}
 # create a bin variable
 bin1 <- bin_variable(trials = 10, p = 0.3)
 
