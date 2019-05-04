@@ -15,7 +15,7 @@ library(binomial)
 ```
 
 ## Creating a binomial distribution object
-A binomial distribution object in this package is of the class `bindis`. To create an object of this class, use `bin_probability()` and pass in the number of trials as well as the probability of success as parameters. This will create a binomial distribution object that displays a data frame of the probability of success ranging from 0 to the number of trials. You can then use the `plot` function to display a bar graph of the distributions.
+A binomial distribution object in this package is of the class `bindis`. To create an object of this class, use `bin_distribution()` and pass in the number of trials as well as the probability of success as parameters. This will create a binomial distribution object that displays a data frame of the probability of success ranging from 0 to the number of trials. You can then use the `plot` function to display a bar graph of the distributions.
 ```{r}
 bd <- bin_distribution(trials = 5, prob = 0.5)
 bd
