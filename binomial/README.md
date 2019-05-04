@@ -4,6 +4,7 @@
 - `bin_distribution` creates a binomial distribution object (of class `"bindis"`)
 - `bin_cumulative` creates a binomial cumulative object (of class `"bincum"`)
 - `summary` creates a summary for a binvar object, resulting in a `"summary.binvar"` object
+- `bin_probability` returns the probability of generating the specified number of successes in the specified number of trials given `prob` probability of success. It will raise an error if any of the parameters are invalid
 - `bin_mean`, `bin_variance`, `bin_mode`, `bin_skewness`, and `bin_kurtosis` are all summary measure functions that can be used with `trials` and `prob` parameters
 
 ### Usage
